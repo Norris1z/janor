@@ -2,39 +2,43 @@
     CONSOLE APPLICATION : Janor_2 Project Overview
 ========================================================================
 
-AppWizard has created this Janor_2 application for you.
+Janor is a simple file parser written in c++.
 
-This file contains a summary of what you will find in each of the files that
-make up your Janor_2 application.
+it parses files with a .jnr extension and a <?JANOR as the first line int the file.
+
+janor has 3 keywords and one symbol which are:
+the '$' which comes before any janor tag
+and '//' which starts a janor comment
+
+example:
+
+<?JANOR
+
+// This is a janor comment
+
+$upper
+the quick brown fox jumped over the lazy dog
+
+$lower 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG
+
+$reverse
+The Quick Brown Fox Jumped Over The Lazy Dog
 
 
-Janor_2.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
 
-Janor_2.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
+The above code when parsed would output:
 
-Janor_2.cpp
-    This is the main application source file.
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG
 
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
+the quick brown fox jumped over the lazy dog
 
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Janor_2.pch and a precompiled types file named StdAfx.obj.
+god yzal eht revo depmuj xof nworb kciuq eht
 
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
+HOW TO PARSE A JANOR SCRIPT:
 
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
+compile and run the janor parser then input a valid directory 
 
-/////////////////////////////////////////////////////////////////////////////
+which conatins all your janor scripts and hit enter
+
+then enter your filename including the .jnr extension and hit enter and watch your code compile :)
