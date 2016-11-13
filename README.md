@@ -4,7 +4,7 @@
 
 Janor is a simple file parser written in c++.
 
-it parses files with a .jnr extension and a <?JANOR as the first line int the file.
+it parses files with a .jnr extension and a <?JANOR as the first line in the file.
 
 janor has 3 keywords and one symbol which are:
 
